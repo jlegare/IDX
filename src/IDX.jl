@@ -58,7 +58,9 @@ const type_constructors = [ UInt8,
 # ----------------------------------------
 
 function items(handle, constructor, sizes)
-    return ( sizes, constructor, convert(Array{constructor}, read(handle, prod(sizes) * sizeof(constructor))) )
+    data = reshape(convert(Array{constructor}, read(handle, prod(sizes) * sizeof(constructor))), Tuple(reverse(sizes)))
+
+    return ( sizes, constructor, data )
 end
 
 
