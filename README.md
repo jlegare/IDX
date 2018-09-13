@@ -8,4 +8,4 @@ using IDX
 load("data/train-images.idx3-ubyte")
 ```
 
-The ``load`` function returns a triple: an array of dimensions, the datatype specified in the IDX file, and an array of the data.
+The ``load`` function returns a triple: an array of dimensions, the datatype specified in the IDX file, and an array for the data. The data array has been reshaped to conform to the dimensions specified in the file. 
