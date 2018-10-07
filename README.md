@@ -1,4 +1,4 @@
-## IDX
+# IDX
 
 This is a parser for the [IDX file format](http://yann.lecun.com/exdb/mnist/). The MNIST data files are provided in the ``data`` folder. 
 
